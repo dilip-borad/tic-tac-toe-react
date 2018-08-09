@@ -2,7 +2,8 @@ import React, { Component } from 'react';
 import Square from './Square';
 class Board extends Component {
     renderSquare(i) {
-        return <Square winLine={this.props.winLine} key={i} index={i} value={this.props.squares[i]}
+        return <Square winLine={this.props.winLine} key={i} index={i} 
+         value={this.props.squares[i]}
          onClick={() => this.props.onClick(i)} />
     }
     render() {
